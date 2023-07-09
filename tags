@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	Makefile	/^BIN=minishell$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -g$/;"	m
+COMMAND	def.h	/^}COMMAND;$/;"	t	typeref:struct:command
+ERR_EXIT	def.h	7;"	d
+MAXARG	def.h	17;"	d
+MAXLINE	def.h	16;"	d
+MAXNAME	def.h	19;"	d
+OBJS	Makefile	/^OBJS=main.o parse.o init.o$/;"	m
+PIPELINE	def.h	18;"	d
+_DEF_H_	def.h	2;"	d
+_EXTERNS_H_	externs.h	2;"	d
+_INIT_H_	init.h	2;"	d
+_PARSE_H_	parse.h	2;"	d
+append	main.c	/^int append;$/;"	v
+args	def.h	/^	char *args[MAXARG+1];$/;"	m	struct:command
+avline	main.c	/^char avline[MAXLINE+1];		\/*ls\\0-l\\0*\/ $/;"	v
+avptr	main.c	/^char *avptr;$/;"	v
+backgnd	main.c	/^int backgnd;$/;"	v
+check	parse.c	/^int check(const char *str)$/;"	f
+cmd	main.c	/^COMMAND cmd[PIPELINE];$/;"	v
+cmd_count	main.c	/^int cmd_count;$/;"	v
+cmdline	main.c	/^char cmdline[MAXLINE+1];	\/*ls -l*\/$/;"	v
+command	def.h	/^typedef struct command$/;"	s
+execute_command	parse.c	/^int execute_command()$/;"	f
+forkexec	parse.c	/^void forkexec(int i)$/;"	f
+get_command	parse.c	/^void get_command(int i)$/;"	f
+getname	parse.c	/^void getname(char *name)$/;"	f
+infd	def.h	/^	int infd;$/;"	m	struct:command
+infile	main.c	/^char infile[MAXLINE+1];$/;"	v
+init	init.c	/^void init()$/;"	f
+lastpid	main.c	/^int lastpid;$/;"	v
+lineptr	main.c	/^char *lineptr;$/;"	v
+main	main.c	/^int main()$/;"	f
+main	tmp/exec.c	/^int main()$/;"	f
+main	tmp/tmp.c	/^int main()$/;"	f
+outfd	def.h	/^	int outfd;$/;"	m	struct:command
+outfile	main.c	/^char outfile[MAXLINE+1];$/;"	v
+parse_command	parse.c	/^int parse_command()$/;"	f
+print_command	parse.c	/^void print_command()$/;"	f
+read_command	parse.c	/^int read_command()$/;"	f
+setup	init.c	/^void setup()$/;"	f
+shell_loop	parse.c	/^void shell_loop()$/;"	f
+sigint_handler	init.c	/^void sigint_handler(int signum)$/;"	f
