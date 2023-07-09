@@ -20,7 +20,7 @@ void forkexec(int i)
 	{
 
 	}
-	else if(pid == 0)
+	else if (pid == 0)
 	{
 		if (signal(SIGTTIN, SIG_IGN) == SIG_ERR)
 		{
