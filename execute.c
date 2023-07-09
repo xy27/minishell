@@ -140,7 +140,7 @@ void execute_disk_command()
 	}
 	else
 	{
-		signal(SIGCHLD, SIG_DFL); // SIG_DFL 与SIG_IGN的区别是? SIG_DFL也是忽略该信号，但是显示设置SIG_IGN是不会导致僵死进程的
+		signal(SIGCHLD, SIG_DFL);
 	}
 
 	int fd;
